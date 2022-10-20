@@ -5,7 +5,7 @@ let num2;
 
 //get input from the user and store it as a variable
 const getValues = function () {
-    randomNumber = Math.floor(Math.random() * 10) + 1;
+    randomNumber = (Math.floor(Math.random() * 10) + 1);
     num1 = document.getElementById('firstNumber').value;
     num2 = document.getElementById('secondNumber').value;
 }
@@ -23,7 +23,7 @@ add.addEventListener('click', function () {
         const x = Math.random();
         sum += x;
     }
-    result.innerHTML = sum;
+    result.innerHTML = sum.toFixed(2);
 });
 
 //add event listener to subtract button
@@ -36,7 +36,7 @@ subtract.addEventListener('click', function () {
         const x = Math.random();
         difference += x;
     }
-    result.innerHTML = difference;
+    result.innerHTML = difference.toFixed(2);
 });
 
 //add event listener to multiply button
@@ -49,7 +49,7 @@ multiply.addEventListener('click', function () {
         const x = Math.random();
         product += x;
     }
-    result.innerHTML = product;
+    result.innerHTML = product.toFixed(2);
 });
 
 //add event listener to divide button
@@ -62,7 +62,10 @@ divide.addEventListener('click', function () {
         const x = Math.random();
         quotient += x;
     }
-    result.innerHTML = quotient;
+    result.innerHTML = quotient.toFixed(2);
 });
+
+result.style.fontSize = '3em';
+result.style.fontWeight = 'bold';
 
 document.body.appendChild(result);
