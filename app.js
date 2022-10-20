@@ -1,8 +1,9 @@
-//add event listener to add button
-var add = document.getElementById('add');
 var num1 = document.getElementById('firstNumber').value;
 var num2 = document.getElementById('secondNumber').value;
 var result = document.createElement('p');
+
+//add event listener to add button
+var add = document.getElementById('add');
 
 add.addEventListener('click', function () {
     var sum = parseInt(num1) + parseInt(num2);
@@ -32,4 +33,5 @@ divide.addEventListener('click', function () {
     var quotient = parseInt(num1) / parseInt(num2);
     result.innerHTML = quotient;
 });
+
 document.body.appendChild(result);
