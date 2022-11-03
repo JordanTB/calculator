@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
     <title>Bad Calculator!</title>
-    <link rel="icon" type="image/x-icon" href="./resources/calculator.png">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="./resources/calculator.png" />
+  </head>
+  <body>
     <main>
-        <h1>Bad Calculator!</h1>
-        <p>Calculators are easy. So instead I made one that may give you the right answer, or it may give you a slightly wrong answer using Math.random to add a number between 0.0 and 1.0</p>
-        <p>The purpose of this was just an exercise in linking HTML, CSS, and JS in seperate files</p>
-        <form action="index.html" method="post">
-            <input type="number" name="num1" title="First Number" id="firstNumber" required> 
-            <br>
-            <br>
-            <input type="number" name="num2" title="Second Number" id="secondNumber" required>
-        </form>
-        <button type="submit" form="firstNumber" form="secondNumber" id="add">Add</button>
-        <button type="submit" form="firstNumber" form="secondNumber" id="subtract">Subtract</button>
-        <button type="submit" form="firstNumber" form="secondNumber" id="multiply">multiply</button>
-        <button type="submit" form="firstNumber" form="secondNumber" id="divide">divide</button>
+      <h1>Bad Calculator!</h1>
+      <p>
+        Calculators are easy. So instead I made one that may give you the right
+        answer, or it may give you a slightly wrong answer using Math.random to
+        add a number between 0.0 and 1.0
+      </p>
+      <p>
+        The purpose of this was just an exercise in linking HTML, CSS, and JS in
+        separate files
+      </p>
+      <form action="index.html" method="post">
+        <input
+          type="number"
+          name="num1"
+          title="First Number"
+          id="firstNumber"
+          required
+        />
+        <br />
+        <br />
+        <input
+          type="number"
+          name="num2"
+          title="Second Number"
+          id="secondNumber"
+          required
+        />
+      </form>
+      <button type="submit" form="firstNumber" form="secondNumber" id="add">
+        Add
+      </button>
+      <button
+        type="submit"
+        form="firstNumber"
+        form="secondNumber"
+        id="subtract"
+      >
+        Subtract
+      </button>
+      <button
+        type="submit"
+        form="firstNumber"
+        form="secondNumber"
+        id="multiply"
+      >
+        multiply
+      </button>
+      <button type="submit" form="firstNumber" form="secondNumber" id="divide">
+        divide
+      </button>
     </main>
     <script src="./resources/script/app.js" defer></script>
-</body>
+  </body>
 </html>
